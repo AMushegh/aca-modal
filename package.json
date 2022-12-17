@@ -1,0 +1,27 @@
+{
+  "name": "aca-modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "predev": "npm run fit-to-browser",
+    "dev": "concurrently --kill-others \"npm run start-lite-server\" \"npm run start-json-server\"",
+    "start-json-server": "json-server --watch src/server/db.json --port 3000",
+    "start-lite-server": "lite-server",
+    "fit-to-browser": "browserify ./src/index.js -p esmify > public/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "concurrently": "^7.6.0",
+    "esmify": "^2.1.1",
+    "json-server": "^0.17.1",
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "axios": "^1.2.1"
+  }
+}
