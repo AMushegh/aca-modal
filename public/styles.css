@@ -15,6 +15,8 @@
 }
 
 .modal {
+  flex-direction: column;
+  justify-content: space-between;
   display: none;
   height: 200px;
   width: 350px;
@@ -24,4 +26,22 @@
   right: 50%;
   z-index: 200;
   transform: translate(50%, -50%);
+}
+
+.modal__top {
+  display: flex;
+  justify-content: end;
+}
+
+.modal__top button {
+  margin: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal__bottom .modal__bottom__actions {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
 }
