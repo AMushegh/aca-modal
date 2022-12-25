@@ -102,7 +102,7 @@ li button:hover{
 }
 .modal__main-content {
   margin-left: 6px;
-  margin-bottom: 70px;
+  margin-bottom: 70px ;
 }
 .modal__main-content textarea {
   font-family: cursive;
