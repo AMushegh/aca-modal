@@ -21,16 +21,24 @@
   height: 200px;
   width: 350px;
   position: fixed;
-  background: #ffffff;
   top: 50%;
   right: 50%;
   z-index: 200;
   transform: translate(50%, -50%);
+  background-color: rgb(11, 231, 246);
+  border-radius: 15px;
 }
 
 .modal__top {
   display: flex;
   justify-content: end;
+}
+
+.modal__top button:hover {
+  background-color: rgb(255, 0, 0);
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
 }
 
 .modal__top button {
@@ -40,8 +48,64 @@
   cursor: pointer;
 }
 
-.modal__bottom .modal__bottom__actions {
+li {
   display: flex;
-  justify-content: end;
-  gap: 16px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-family: cursive;
+}
+li button{
+  border-radius: 30px;
+  border: 0px solid black;
+  width: 70px;
+  font-size: 30px;
+  background-color: rgb(255, 176, 176);
+  margin-left: 15px;
+}
+li button:hover{
+  background-color: rgb(102, 239, 102);
+}
+#open-modal-button {
+  background-color: rgb(200, 200, 236);
+  border-radius: 9px;
+  border: none;
+  margin-top: 5px;
+  margin-left: 60px;
+  font-size: 30px;
+}
+#open-modal-button:hover {
+  background-color: rgb(115, 115, 88)
+}
+.container {
+  background-color: rgb(119, 214, 72);
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: fit-content;
+}
+.modal__bottom__actions button {
+  border: none;
+  width: 60px;
+  height: 30px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.modal__bottom__actions button:hover {
+  background-color: rgb(142, 79, 224);
+}
+
+.modal__bottom__actions {
+  display: flex;
+  margin-left: 55%;
+}
+.modal__main-content {
+  margin-left: 6px;
+  margin-bottom: 70px ;
+}
+.modal__main-content textarea {
+  font-family: cursive;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.837);
 }
